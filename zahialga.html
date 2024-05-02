@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sidebar">
+    <div class="text-left mb-4 ml-3 d-flex align-items-center logo-wrapper">
+      <img src="logo.png" alt="Logo" style="width: 50px;">
+      <a href="" class="yesug">СУРГАЛТЫН УДИРДЛАГА, МЭДЭЭЛЛИЙН СИСТЕМ</a>
+    </div>
+    
+    <a href="admin.html"><i class="fas fa-tachometer-alt mr-2"></i><span>Хяналтын самбар</span></a>
+    <a href="users.html"><i class="fas fa-users mr-2"></i><span>Хэрэглэгчид</span></a>
+    <a href="zahialga.html" class="active"><i class="fas fa-shopping-cart mr-2"></i><span>Захиалга өгөх</span></a>
+    <a href="#"><i class="fas fa-cog mr-2"></i><span>Тохиргоо</span></a>
+    <a href="login.html"><i class="fas fa-sign-out-alt mr-2"></i><span>Гарах</span></a>
+  </div>
+  
+<div class="content">
+
+  <div class="container mt-4">
+    <form>
+        <div class="form-group">
+          <h2 class="mb-4">Захиалга</h2>
+        </div>
+        <div class="form-group">
+          <fieldset>
+            <legend><i class="fa fa-user"></i> Захиалгын мэдээлэлэ оруулна уу.</legend>
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <label for="hall_number">Өрөөний дугаар</label>
+                <input type="number" class="form-control" id="hall_number" name="hall_number" required>
+              </div>
+              <div class="form-group col-md-4">
+                <label for="desk_number">Ширээний дугаар</label>
+                <input type="number" class="form-control" id="desk_number" name="desk_number" required>
+              </div>
+              <div class="form-group col-md-4">
+                <label for="date">Date</label>
+                <input type="date" class="form-control" id="date" name="date" required>
+              </div>
+              <div class="form-group col-md-4">
+                <label for="time">Time</label>
+                <input type="time" class="form-control" id="time" name="time" required>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend><i class="fa fa-lock"></i>Баталгаажуулах</legend>
+            <div class="form-group">
+              <label for="email">Эмайл оруулах</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="cr_password">Нууц үгээ оруулна уу</label>
+                <input type="password" class="form-control" id="cr_password" name="cr_password" required>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="conf_password">Нууц үгээ давтана уу</label>
+                <input type="password" class="form-control" id="conf_password" name="conf_password" required>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="form-group">
+            <legend><i class="fa fa-tags"></i>Шинэ/Бүртгэлтэй</legend>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="subscription" value="free" id="free">
+              <label class="form-check-label" for="free">
+                Шинэ хэрэглэгч <span class="price"></span>
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="subscription" value="deluxe" id="deluxe" checked required>
+              <label class="form-check-label" for="deluxe">
+                Member хаягтай <span class="price"></span>
+              </label>
+            </div>
+          </fieldset>
+        </div>
+        <button type="submit" class="btn btn-primary">Захиалах</button>
+      </form>
+  </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+
+</body>
+</html>
